@@ -24,7 +24,6 @@ namespace PayPalLegacyConsoleApp
 
 		static void SetExpressCheckOut(PayPalService.CustomSecurityHeaderType credentials)
 		{
-
 			var req = new PayPalService.SetExpressCheckoutReq
 			{
 				SetExpressCheckoutRequest = new PayPalService.SetExpressCheckoutRequestType
@@ -46,7 +45,8 @@ namespace PayPalLegacyConsoleApp
 							}
 						},
 						SolutionType = PayPalService.SolutionTypeType.Mark
-					}
+					},
+					Version = "100"
 				}
 			};
 

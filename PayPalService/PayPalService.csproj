@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\PayPalServiceRef\Reference.cs">
+    <Compile Include="Connected Services\PayPalService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -56,373 +56,373 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Connected Services\PayPalServiceRef\CoreComponentTypes.xsd">
+    <None Include="Connected Services\PayPalService\CoreComponentTypes.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\eBLBaseComponents.xsd">
+    <None Include="Connected Services\PayPalService\eBLBaseComponents.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\EnhancedDataTypes.xsd">
+    <None Include="Connected Services\PayPalService\EnhancedDataTypes.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.AddressVerifyResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.AddressVerifyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.AddressVerifyResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.AddressVerifyResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BAUpdateResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BAUpdateResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BillAgreementUpdateResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BillAgreementUpdateResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BillOutstandingAmountResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BillOutstandingAmountResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BillOutstandingAmountResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BillOutstandingAmountResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BillUserResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BillUserResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BillUserResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BillUserResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BMButtonSearchResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BMButtonSearchResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BMButtonSearchResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BMButtonSearchResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BMCreateButtonResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BMCreateButtonResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BMCreateButtonResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BMCreateButtonResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BMGetButtonDetailsResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BMGetButtonDetailsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BMGetButtonDetailsResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BMGetButtonDetailsResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BMGetInventoryResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BMGetInventoryResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BMGetInventoryResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BMGetInventoryResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BMManageButtonStatusResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BMManageButtonStatusResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BMManageButtonStatusResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BMManageButtonStatusResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BMSetInventoryResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BMSetInventoryResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BMSetInventoryResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BMSetInventoryResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BMUpdateButtonResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BMUpdateButtonResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.BMUpdateButtonResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.BMUpdateButtonResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.CancelRecoupResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.CancelRecoupResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.CancelRecoupResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.CancelRecoupResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.CompleteRecoupResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.CompleteRecoupResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.CompleteRecoupResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.CompleteRecoupResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.CreateBillingAgreementResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.CreateBillingAgreementResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.CreateBillingAgreementResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.CreateBillingAgreementResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.CreateMobilePaymentResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.CreateMobilePaymentResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.CreateMobilePaymentResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.CreateMobilePaymentResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.CreateRecurringPaymentsProfileResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.CreateRecurringPaymentsProfileResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.CreateRecurringPaymentsProfileResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.CreateRecurringPaymentsProfileResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.CustomSecurityHeaderType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.CustomSecurityHeaderType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoAuthorizationResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoAuthorizationResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoAuthorizationResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoAuthorizationResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoCancelResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoCancelResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoCancelResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoCancelResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoCaptureResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoCaptureResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoCaptureResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoCaptureResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoDirectPaymentResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoDirectPaymentResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoDirectPaymentResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoDirectPaymentResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoExpressCheckoutPaymentResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoExpressCheckoutPaymentResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoExpressCheckoutPaymentResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoExpressCheckoutPaymentResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoMobileCheckoutPaymentResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoMobileCheckoutPaymentResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoMobileCheckoutPaymentResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoMobileCheckoutPaymentResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoNonReferencedCreditResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoNonReferencedCreditResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoNonReferencedCreditResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoNonReferencedCreditResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoReauthorizationResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoReauthorizationResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoReauthorizationResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoReauthorizationResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoReferenceTransactionResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoReferenceTransactionResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoReferenceTransactionResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoReferenceTransactionResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoUATPAuthorizationResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoUATPAuthorizationResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoUATPAuthorizationResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoUATPAuthorizationResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoUATPExpressCheckoutPaymentResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoUATPExpressCheckoutPaymentResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoUATPExpressCheckoutPaymentResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoUATPExpressCheckoutPaymentResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoVoidResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoVoidResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.DoVoidResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.DoVoidResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.EnterBoardingResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.EnterBoardingResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.EnterBoardingResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.EnterBoardingResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.ExecuteCheckoutOperationsResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.ExecuteCheckoutOperationsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.ExecuteCheckoutOperationsResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.ExecuteCheckoutOperationsResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.ExternalRememberMeOptOutResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.ExternalRememberMeOptOutResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.ExternalRememberMeOptOutResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.ExternalRememberMeOptOutResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetAccessPermissionDetailsResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetAccessPermissionDetailsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetAccessPermissionDetailsResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetAccessPermissionDetailsResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetAuthDetailsResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetAuthDetailsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetAuthDetailsResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetAuthDetailsResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetBalanceResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetBalanceResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetBalanceResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetBalanceResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetBillingAgreementCustomerDetailsResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetBillingAgreementCustomerDetailsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetBillingAgreementCustomerDetailsResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetBillingAgreementCustomerDetailsResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetBoardingDetailsResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetBoardingDetailsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetBoardingDetailsResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetBoardingDetailsResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetExpressCheckoutDetailsResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetExpressCheckoutDetailsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetExpressCheckoutDetailsResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetExpressCheckoutDetailsResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetIncentiveEvaluationResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetIncentiveEvaluationResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetIncentiveEvaluationResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetIncentiveEvaluationResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetMobileStatusResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetMobileStatusResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetMobileStatusResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetMobileStatusResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetPalDetailsResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetPalDetailsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetPalDetailsResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetPalDetailsResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetRecurringPaymentsProfileDetailsResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetRecurringPaymentsProfileDetailsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetRecurringPaymentsProfileDetailsResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetRecurringPaymentsProfileDetailsResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetTransactionDetailsResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetTransactionDetailsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.GetTransactionDetailsResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.GetTransactionDetailsResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.InitiateRecoupResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.InitiateRecoupResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.InitiateRecoupResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.InitiateRecoupResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.ManagePendingTransactionStatusResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.ManagePendingTransactionStatusResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.ManagePendingTransactionStatusResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.ManagePendingTransactionStatusResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.ManageRecurringPaymentsProfileStatusResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.ManageRecurringPaymentsProfileStatusResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.ManageRecurringPaymentsProfileStatusResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.ManageRecurringPaymentsProfileStatusResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.MassPayResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.MassPayResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.MassPayResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.MassPayResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.RefundTransactionResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.RefundTransactionResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.RefundTransactionResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.RefundTransactionResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.ReverseTransactionResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.ReverseTransactionResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.ReverseTransactionResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.ReverseTransactionResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.SetAccessPermissionsResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.SetAccessPermissionsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.SetAccessPermissionsResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.SetAccessPermissionsResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.SetAuthFlowParamResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.SetAuthFlowParamResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.SetAuthFlowParamResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.SetAuthFlowParamResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.SetCustomerBillingAgreementResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.SetCustomerBillingAgreementResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.SetCustomerBillingAgreementResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.SetCustomerBillingAgreementResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.SetExpressCheckoutResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.SetExpressCheckoutResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.SetExpressCheckoutResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.SetExpressCheckoutResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.SetMobileCheckoutResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.SetMobileCheckoutResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.SetMobileCheckoutResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.SetMobileCheckoutResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.TransactionSearchResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.TransactionSearchResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.TransactionSearchResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.TransactionSearchResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.UpdateAccessPermissionsResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.UpdateAccessPermissionsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.UpdateAccessPermissionsResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.UpdateAccessPermissionsResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.UpdateAuthorizationResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.UpdateAuthorizationResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.UpdateAuthorizationResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.UpdateAuthorizationResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.UpdateRecurringPaymentsProfileResponse.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.UpdateRecurringPaymentsProfileResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalService.PayPalServiceRef.UpdateRecurringPaymentsProfileResponseType.datasource">
+    <None Include="Connected Services\PayPalService\PayPalService.PayPalService.UpdateRecurringPaymentsProfileResponseType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\PayPalServiceRef\PayPalSvc.wsdl" />
+    <None Include="Connected Services\PayPalService\PayPalSvc.wsdl" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\PayPalServiceRef\" />
+    <WCFMetadataStorage Include="Connected Services\PayPalService\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\PayPalServiceRef\configuration91.svcinfo" />
+    <None Include="Connected Services\PayPalService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\PayPalServiceRef\configuration.svcinfo" />
+    <None Include="Connected Services\PayPalService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\PayPalServiceRef\Reference.svcmap">
+    <None Include="Connected Services\PayPalService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

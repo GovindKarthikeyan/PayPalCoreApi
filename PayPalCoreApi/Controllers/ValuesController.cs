@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PayPalCoreApi.ServiceModels;
 using System.Collections.Generic;
+using System.Net.Http;
 
 namespace PayPalCoreApi.Controllers
 {
@@ -12,12 +12,11 @@ namespace PayPalCoreApi.Controllers
 		[HttpGet]
 		public ActionResult<IEnumerable<string>> Get()
 		{
-			var service = new PayPalServiceModel();
 			return new string[] {
 				"value1",
 				"value2",
 				"value3",
-				service.GetMessage()
+				new HttpClient().GetStringAsync(@"https://putsreq.com/xNBUFnVa9EDm50Jja0qn?name=KarthikG").Result
 			};
 		}
 

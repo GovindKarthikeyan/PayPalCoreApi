@@ -10,7 +10,7 @@ namespace PayPalService
     {
 		public void CallPayPal()
 		{
-			var client = new PayPalServiceRef.PayPalAPIAAInterfaceClient();
+			var client = new PayPalService.PayPalAPIAAInterfaceClient();
 			//client.SetExpressCheckout();
 		}
     }
