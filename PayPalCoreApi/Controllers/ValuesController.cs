@@ -15,8 +15,7 @@ namespace PayPalCoreApi.Controllers
 			return new string[] {
 				"value1",
 				"value2",
-				"value3",
-				new HttpClient().GetStringAsync(@"https://putsreq.com/xNBUFnVa9EDm50Jja0qn?name=KarthikG").Result
+				"value3"
 			};
 		}
 

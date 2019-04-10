@@ -40,23 +40,20 @@ namespace PayPalCoreApi.ServiceModels
 					Signature = "Agx6Wbqn9pHtIsQ6kM0JlN.vyYeFAL8zsQX87GUPrhzPkju5VvSGp5td"
 				}
 			};
-			var binding = new BasicHttpBinding();
-			binding.Security.Mode = BasicHttpSecurityMode.Transport;
-			var endpoint = new EndpointAddress("https://api-aa.sandbox.paypal.com/2.0/");
-			//var factory = new ChannelFactory<PayPalService.PayPalService.PayPalAPIAAInterface>("PayPalAPIAA", new EndpointAddress("https://api-aa.sandbox.paypal.com/2.0/"));
-			var factory = new ChannelFactory<PayPalService.PayPalService.PayPalAPIAAInterface>(binding, endpoint);
-			var p = factory.CreateChannel();
-			
-			var resp = p.SetExpressCheckoutAsync(new PayPalService.PayPalService.SetExpressCheckoutRequest
+			var factory = new ChannelFactory<PayPalService.PayPalService.PayPalAPIAAInterface>(
+								new BasicHttpBinding(BasicHttpSecurityMode.Transport), 
+								new EndpointAddress("https://api-aa.sandbox.paypal.com/2.0/"));
+			var proxy = factory.CreateChannel();
+			var resp = proxy.SetExpressCheckoutAsync(new PayPalService.PayPalService.SetExpressCheckoutRequest
 			{
 				RequesterCredentials = credentials,
 				SetExpressCheckoutReq = req
 			}).Result;
-
-			return resp?.SetExpressCheckoutResponse1?.Token?.Replace("EC-", "")?.Trim() ?? "";
+			
+			return resp?.SetExpressCheckoutResponse1?.Token ?? "";
 		}
 
-		public string DoExpressCheckOutPaymentUatp()
+		public PayPalService.PayPalService.DoUATPExpressCheckoutPaymentResponse DoExpressCheckOutPaymentUATP(string Token, string PayerId)
 		{
 			var req = new PayPalService.PayPalService.DoUATPExpressCheckoutPaymentReq
 			{
@@ -64,11 +61,23 @@ namespace PayPalCoreApi.ServiceModels
 				{
 					DoExpressCheckoutPaymentRequestDetails = new PayPalService.PayPalService.DoExpressCheckoutPaymentRequestDetailsType
 					{
-						Token = "",
-						ClientID = "",
-						PayerID = "",
-						// etc.1111
-					}
+						Token = Token,
+						PayerID = PayerId,
+						PaymentDetails = new[] 
+						{
+							new PayPalService.PayPalService.PaymentDetailsType
+							{
+								OrderTotal = new PayPalService.PayPalService.BasicAmountType
+								{
+									currencyID= PayPalService.PayPalService.CurrencyCodeType.USD,
+									Value="100"
+								},
+								PaymentAction = PayPalService.PayPalService.PaymentActionCodeType.Sale
+							}
+						},
+						
+					},
+					Version = "100"
 				}
 			};
 			var credentials = new PayPalService.PayPalService.CustomSecurityHeaderType
@@ -80,8 +89,19 @@ namespace PayPalCoreApi.ServiceModels
 					Signature = "Agx6Wbqn9pHtIsQ6kM0JlN.vyYeFAL8zsQX87GUPrhzPkju5VvSGp5td"
 				}
 			};
+			var factory = new ChannelFactory<PayPalService.PayPalService.PayPalAPIAAInterface>(
+										new BasicHttpBinding(BasicHttpSecurityMode.Transport),
+										new EndpointAddress("https://api-aa.sandbox.paypal.com/2.0/"));
+			var proxy = factory.CreateChannel();
+			var resp = proxy.DoUATPExpressCheckoutPaymentAsync(
+				new PayPalService.PayPalService.DoUATPExpressCheckoutPaymentRequest
+				{
+					RequesterCredentials = credentials,
+					DoUATPExpressCheckoutPaymentReq = req
+					
+				}).Result;
 
-			return "";
+			return resp;
 		}
 
 		

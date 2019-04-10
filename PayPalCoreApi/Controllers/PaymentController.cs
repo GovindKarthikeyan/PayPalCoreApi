@@ -19,7 +19,8 @@ namespace PayPalCoreApi.Controllers
 		[HttpPost("approve")]
 		public ActionResult Post([FromBody] ApproveRequest req)
 		{
-			return new JsonResult(req);
+			var uatpResp = new PayPalServiceModel().DoExpressCheckOutPaymentUATP(req.TokenId, req.PayerId);
+			return new JsonResult(uatpResp);
 		}
 
 		// GET: api/Payment/5
@@ -44,7 +45,7 @@ namespace PayPalCoreApi.Controllers
 
 	public class ApproveRequest
 	{
-		public string OrderId { get; set;  }
+		public string TokenId { get; set; }
 		public string PayerId { get; set; }
 	}
 }
