@@ -1,4 +1,5 @@
-﻿using System.ServiceModel;
+﻿using PayPalService.PayPalService;
+using System.ServiceModel;
 
 namespace PayPalCoreApi.ServiceModels
 {
@@ -6,104 +7,88 @@ namespace PayPalCoreApi.ServiceModels
 	{
 		public string SetExpressCheckOut()
 		{
-			var req = new PayPalService.PayPalService.SetExpressCheckoutReq
+			var req = new SetExpressCheckoutReq
 			{
-				SetExpressCheckoutRequest = new PayPalService.PayPalService.SetExpressCheckoutRequestType
+				SetExpressCheckoutRequest = new SetExpressCheckoutRequestType
 				{
-					SetExpressCheckoutRequestDetails = new PayPalService.PayPalService.SetExpressCheckoutRequestDetailsType
+					SetExpressCheckoutRequestDetails = new SetExpressCheckoutRequestDetailsType
 					{
 						ReturnURL = @"https://www.paypal.com/checkoutnow/error",
 						CancelURL = @"https://www.paypal.com/checkoutnow/error",
 						PaymentDetails = new[]
-									{
-							new PayPalService.PayPalService.PaymentDetailsType
+						{
+							new PaymentDetailsType
 							{
-								OrderTotal = new PayPalService.PayPalService.BasicAmountType
-								{
-									currencyID = PayPalService.PayPalService.CurrencyCodeType.USD,
-									Value = "100"
-								},
-								PaymentAction = PayPalService.PayPalService.PaymentActionCodeType.Order
+								OrderTotal = new BasicAmountType { currencyID = CurrencyCodeType.USD, Value = "100" },
+								PaymentAction = PaymentActionCodeType.Order
 							}
 						},
-						SolutionType = PayPalService.PayPalService.SolutionTypeType.Mark
+						SolutionType = SolutionTypeType.Mark
 					},
 					Version = "100"
 				}
 			};
-			var credentials = new PayPalService.PayPalService.CustomSecurityHeaderType
-			{
-				Credentials = new PayPalService.PayPalService.UserIdPasswordType
-				{
-					Username = "karthik-business_api1.Lux.com",
-					Password = "NKXWBHEMPVFJBK7Y",
-					Signature = "Agx6Wbqn9pHtIsQ6kM0JlN.vyYeFAL8zsQX87GUPrhzPkju5VvSGp5td"
-				}
-			};
-			var factory = new ChannelFactory<PayPalService.PayPalService.PayPalAPIAAInterface>(
-								new BasicHttpBinding(BasicHttpSecurityMode.Transport), 
-								new EndpointAddress("https://api-aa.sandbox.paypal.com/2.0/"));
+
+			var factory = new ChannelFactory<PayPalAPIAAInterface>(new BasicHttpBinding(BasicHttpSecurityMode.Transport), new EndpointAddress("https://api-aa.sandbox.paypal.com/2.0/"));
 			var proxy = factory.CreateChannel();
-			var resp = proxy.SetExpressCheckoutAsync(new PayPalService.PayPalService.SetExpressCheckoutRequest
+			var resp = proxy.SetExpressCheckoutAsync(new SetExpressCheckoutRequest
 			{
-				RequesterCredentials = credentials,
+				RequesterCredentials = GetHeaderCredentials(),
 				SetExpressCheckoutReq = req
 			}).Result;
-			
+			factory.Close();
+
 			return resp?.SetExpressCheckoutResponse1?.Token ?? "";
 		}
 
-		public PayPalService.PayPalService.DoUATPExpressCheckoutPaymentResponse DoExpressCheckOutPaymentUATP(string Token, string PayerId)
+		public DoUATPExpressCheckoutPaymentResponse DoExpressCheckOutPaymentUATP(string Token, string PayerId)
 		{
-			var req = new PayPalService.PayPalService.DoUATPExpressCheckoutPaymentReq
+			var req = new DoUATPExpressCheckoutPaymentReq
 			{
-				DoUATPExpressCheckoutPaymentRequest = new PayPalService.PayPalService.DoUATPExpressCheckoutPaymentRequestType
+				DoUATPExpressCheckoutPaymentRequest = new DoUATPExpressCheckoutPaymentRequestType
 				{
-					DoExpressCheckoutPaymentRequestDetails = new PayPalService.PayPalService.DoExpressCheckoutPaymentRequestDetailsType
+					DoExpressCheckoutPaymentRequestDetails = new DoExpressCheckoutPaymentRequestDetailsType
 					{
 						Token = Token,
 						PayerID = PayerId,
 						PaymentDetails = new[] 
 						{
-							new PayPalService.PayPalService.PaymentDetailsType
+							new PaymentDetailsType
 							{
-								OrderTotal = new PayPalService.PayPalService.BasicAmountType
-								{
-									currencyID= PayPalService.PayPalService.CurrencyCodeType.USD,
-									Value="100"
-								},
-								PaymentAction = PayPalService.PayPalService.PaymentActionCodeType.Sale
+								OrderTotal = new BasicAmountType { currencyID = CurrencyCodeType.USD, Value = "100"},
+								PaymentAction = PaymentActionCodeType.Order
 							}
 						},
-						
 					},
 					Version = "100"
 				}
 			};
-			var credentials = new PayPalService.PayPalService.CustomSecurityHeaderType
+
+			var factory = new ChannelFactory<PayPalAPIAAInterface>(new BasicHttpBinding(BasicHttpSecurityMode.Transport),new EndpointAddress("https://api-aa.sandbox.paypal.com/2.0/"));
+			var proxy = factory.CreateChannel();
+			var resp = proxy.DoUATPExpressCheckoutPaymentAsync(
+				new DoUATPExpressCheckoutPaymentRequest
+				{
+					RequesterCredentials = GetHeaderCredentials(),
+					DoUATPExpressCheckoutPaymentReq = req
+					
+				}).Result;
+			factory.Close();
+
+			return resp;
+		}
+
+		private CustomSecurityHeaderType GetHeaderCredentials()
+		{
+			return new CustomSecurityHeaderType
 			{
-				Credentials = new PayPalService.PayPalService.UserIdPasswordType
+				Credentials = new UserIdPasswordType
 				{
 					Username = "karthik-business_api1.Lux.com",
 					Password = "NKXWBHEMPVFJBK7Y",
 					Signature = "Agx6Wbqn9pHtIsQ6kM0JlN.vyYeFAL8zsQX87GUPrhzPkju5VvSGp5td"
 				}
 			};
-			var factory = new ChannelFactory<PayPalService.PayPalService.PayPalAPIAAInterface>(
-										new BasicHttpBinding(BasicHttpSecurityMode.Transport),
-										new EndpointAddress("https://api-aa.sandbox.paypal.com/2.0/"));
-			var proxy = factory.CreateChannel();
-			var resp = proxy.DoUATPExpressCheckoutPaymentAsync(
-				new PayPalService.PayPalService.DoUATPExpressCheckoutPaymentRequest
-				{
-					RequesterCredentials = credentials,
-					DoUATPExpressCheckoutPaymentReq = req
-					
-				}).Result;
-
-			return resp;
 		}
-
-		
 	}
 }
